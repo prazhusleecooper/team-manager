@@ -1,5 +1,5 @@
 import React from 'react';
-import { Dropdown, DropdownButton, ButtonGroup } from 'react-bootstrap';
+import { Dropdown } from 'react-bootstrap';
 import { GoKebabVertical } from 'react-icons/go';
 
 const Hamburger = ({setAsLeader, removeMember, index}) => {
