@@ -1,0 +1,212 @@
+const categoriesList = [
+        {
+            category: 'Project Manager',
+            category_code: 'project_manager',
+            users: [
+                {
+                    name: "John Terry",
+                    experience: '3',
+                    image: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw3NjA4Mjc3NHx8ZW58MHx8fHw%3D&w=1000&q=80',
+                    category: 'project_manager',
+                },
+                {
+                    name: "Robertson",
+                    experience: '6',
+                    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKgX28xw5M8L0aH_6L8PqMJIrmGHhkM_tQmg&usqp=CAU',
+                    category: 'project_manager',
+                },
+                {
+                    name: "Maria",
+                    experience: '2',
+                    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsVaYCtrXlbqrWBuXvFqzTAGM6MP3wk2aCcw&usqp=CAU',
+                    category: 'project_manager',
+                },
+                {
+                    name: "Alexander",
+                    experience: '8',
+                    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZQTO2nBUyAZLM5W5L8XApmemS3XKssgbzVQ&usqp=CAU',
+                    category: 'project_manager',
+                },
+            ],
+        },
+        {
+            category: 'UI/UX Designer',
+            category_code: 'ui_ux',
+            users: [
+                {
+                    name: "John Terry",
+                    experience: '3',
+                    image: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw3NjA4Mjc3NHx8ZW58MHx8fHw%3D&w=1000&q=80',
+                    category: 'ui_ux',
+                },
+                {
+                    name: "Robertson",
+                    experience: '6',
+                    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKgX28xw5M8L0aH_6L8PqMJIrmGHhkM_tQmg&usqp=CAU',
+                    category: 'ui_ux',
+                },
+                {
+                    name: "Maria",
+                    experience: '2',
+                    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsVaYCtrXlbqrWBuXvFqzTAGM6MP3wk2aCcw&usqp=CAU',
+                    category: 'ui_ux',
+                },
+                {
+                    name: "Alexander",
+                    experience: '8',
+                    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZQTO2nBUyAZLM5W5L8XApmemS3XKssgbzVQ&usqp=CAU',
+                    category: 'ui_ux',
+                },
+            ],
+        },
+        {
+            category: 'Front End Developers',
+            category_code: 'front_end',
+            users: [
+                {
+                    name: "John Terry",
+                    experience: '3',
+                    image: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw3NjA4Mjc3NHx8ZW58MHx8fHw%3D&w=1000&q=80',
+                    category: 'front_end',
+                },
+                {
+                    name: "Robertson",
+                    experience: '6',
+                    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKgX28xw5M8L0aH_6L8PqMJIrmGHhkM_tQmg&usqp=CAU',
+                    category: 'front_end',
+                },
+                {
+                    name: "Maria",
+                    experience: '2',
+                    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsVaYCtrXlbqrWBuXvFqzTAGM6MP3wk2aCcw&usqp=CAU',
+                    category: 'front_end',
+                },
+                {
+                    name: "Alexander",
+                    experience: '8',
+                    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZQTO2nBUyAZLM5W5L8XApmemS3XKssgbzVQ&usqp=CAU',
+                    category: 'front_end',
+                },
+            ],
+        },
+        {
+            category: 'Back End Developers',
+            category_code: 'back_end',
+            users: [
+                {
+                    name: "John Terry",
+                    experience: '3',
+                    image: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw3NjA4Mjc3NHx8ZW58MHx8fHw%3D&w=1000&q=80',
+                    category: 'back_end',
+                },
+                {
+                    name: "Robertson",
+                    experience: '6',
+                    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKgX28xw5M8L0aH_6L8PqMJIrmGHhkM_tQmg&usqp=CAU',
+                    category: 'back_end',
+                },
+                {
+                    name: "Maria",
+                    experience: '2',
+                    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsVaYCtrXlbqrWBuXvFqzTAGM6MP3wk2aCcw&usqp=CAU',
+                    category: 'back_end',
+                },
+                {
+                    name: "Alexander",
+                    experience: '8',
+                    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZQTO2nBUyAZLM5W5L8XApmemS3XKssgbzVQ&usqp=CAU',
+                    category: 'back_end',
+                },
+            ],
+        },
+        {
+            category: 'QA/Tester',
+            category_code: 'qa_tester',
+            users: [
+                {
+                    name: "John Terry",
+                    experience: '3',
+                    image: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw3NjA4Mjc3NHx8ZW58MHx8fHw%3D&w=1000&q=80',
+                    category: 'qa_tester',
+                },
+                {
+                    name: "Robertson",
+                    experience: '6',
+                    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKgX28xw5M8L0aH_6L8PqMJIrmGHhkM_tQmg&usqp=CAU',
+                    category: 'qa_tester',
+                },
+                {
+                    name: "Maria",
+                    experience: '2',
+                    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsVaYCtrXlbqrWBuXvFqzTAGM6MP3wk2aCcw&usqp=CAU',
+                    category: 'qa_tester',
+                },
+                {
+                    name: "Alexander",
+                    experience: '8',
+                    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZQTO2nBUyAZLM5W5L8XApmemS3XKssgbzVQ&usqp=CAU',
+                    category: 'qa_tester',
+                },
+            ],
+        },
+        {
+            category: 'Mobile Developers',
+            category_code: 'mobile_dev',
+            users: [
+                {
+                    name: "John Terry",
+                    experience: '3',
+                    image: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw3NjA4Mjc3NHx8ZW58MHx8fHw%3D&w=1000&q=80',
+                    category: 'mobile_dev',
+                },
+                {
+                    name: "Robertson",
+                    experience: '6',
+                    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKgX28xw5M8L0aH_6L8PqMJIrmGHhkM_tQmg&usqp=CAU',
+                    category: 'mobile_dev',
+                },
+                {
+                    name: "Maria",
+                    experience: '2',
+                    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsVaYCtrXlbqrWBuXvFqzTAGM6MP3wk2aCcw&usqp=CAU',
+                    category: 'mobile_dev',
+                },
+                {
+                    name: "Alexander",
+                    experience: '8',
+                    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZQTO2nBUyAZLM5W5L8XApmemS3XKssgbzVQ&usqp=CAU',
+                    category: 'mobile_dev',
+                },
+            ],
+        },
+        {
+            category: 'DevOps',
+            category_code: 'dev_ops',
+            users: [
+                {
+                    name: "John Terry",
+                    experience: '3',
+                    image: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw3NjA4Mjc3NHx8ZW58MHx8fHw%3D&w=1000&q=80',
+                    category: 'dev_ops',
+                },
+                {
+                    name: "Robertson",
+                    experience: '6',
+                    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKgX28xw5M8L0aH_6L8PqMJIrmGHhkM_tQmg&usqp=CAU',
+                    category: 'dev_ops',
+                },
+                {
+                    name: "Maria",
+                    experience: '2',
+                    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsVaYCtrXlbqrWBuXvFqzTAGM6MP3wk2aCcw&usqp=CAU',
+                    category: 'dev_ops',
+                },
+                {
+                    name: "Alexander",
+                    experience: '8',
+                    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZQTO2nBUyAZLM5W5L8XApmemS3XKssgbzVQ&usqp=CAU',
+                    category: 'dev_ops',
+                },
+            ],
+        },
+    ];
